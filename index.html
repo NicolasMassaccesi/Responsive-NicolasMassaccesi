@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>PÁGINA PERSONAL</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <nav class="navegadorBuscador">
+            <img class="icono" src="./images/buscar.png" alt="ERROR">
+            <input type="search">
+        </nav>
+        <nav class="navegadorBotones">
+            <img class="icono" src="./images/inicio.png" alt="ERROR">
+            <a href="#inicio"><button>INICIO</button></a>
+            <img class="icono" src="./images/sobremi.png" alt="ERROR">
+            <a href="#sobreMi"><button>SOBRE MÍ</button></a>
+            <img class="icono" src="./images/formulario.png" alt="ERROR">
+            <a href="#formulario"><button>FORMULARIO</button></a>
+            <img class="icono" src="./images/galeria.png" alt="ERROR">
+            <a href="#galeria"><button>GALERÍA</button></a>
+            <img class="icono" src="./images/contacto.png" alt="ERROR">
+            <a href="#contacto"><button>CONTACTO</button> </a>
+
+
+
+
+        </nav>
+    </header>
+    <main class="principal">
+        <section id="inicio">
+            <div class="fila">
+
+
+                <form class="columna">
+                    <h2>INGRESA</h2>
+                    <img class="img_avatar" src="./images/inicio/img_avatar.png" alt="ERROR">
+                    <input type="text" name="username" placeholder="Usuario" required>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                    <div class="condicionesCheckbox">
+                        <input type="checkbox" checked="checked" name="recordar"> Recuerdame
+                    </div>
+                    <input class="login" type="submit" value="Acceder">
+
+                    <a href="https://www.facebook.com/" target="_blank" class="fb btn">
+                        <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank" class="twitter btn">
+                        <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                    </a>
+                    <a href="https://www.google.com/" target="_blank" class="google btn">
+                        <i class="fa fa-google fa-fw"></i> Login with Google+
+                    </a>
+                </form>
+
+
+                <form class="columna">
+                    <h2>REGISTRATE</h2>
+                    <label for="emailRegistro"><b>Email</b></label>
+                    <input type="text" placeholder="ejemplo@gmail.com" name="emailRegistro"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <label for="passwordRegistro"><b>Contraseña</b></label>
+                    <input type="password" placeholder="***********" name="passwordRegistro">
+                    <label for="nombreRegistro"><b>Nombre</b></label>
+                    <input type="text" placeholder="Nombre" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$" name="nombreRegistro">
+                    <label for="apellidoRegistro"><b>Apellido</b></label>
+                    <input type="text" placeholder="Apellido" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$"
+                        name="apellidoRegistro">
+                    <label for="nacimientoRegistro"><b>Fecha de Nacimiento</b></label>
+                    <input type="date" placeholder="ejemplo@gmail.com" name="nacimientoRegistro">
+                    <label for="telefonoRegistro"><b>Teléfono</b></label>
+                    <input type="text" name="telefono" placeholder="123456789" type="text"
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
+                    <label for="direcciónRegistro"><b>Dirección</b></label>
+                    <input type="text" name="direccion" placeholder="Dirección" pattern="[A-za-zo-9\s, ./]{1,100}">
+                    <div class="condicionesCheckbox">
+                        <input type="checkbox" required>
+                        <p>He leído y acepto los <a href="">términos y condiciones de uso</a>.</p>
+                    </div>
+                    <input class="login" type="submit" value="Registrarse">
+
+                </form>
+            </div>
+        </section>
+        <section id="sobreMi">SOBRE MÍ</section>
+        <section id="formulario">
+            <div class="fila">
+                <form class="columna">
+                    <p><strong>Aficiónes</strong></p>
+                    <div class="wrapper">
+                        <div class="pass-settings">
+                            <label class="title">¿Cuál es tu hobby favorito?</label>
+                            <ul class="options">
+                                <li class="option">
+                                    <input id="futbol" type="radio" name="fav_hobby" value="Fútbol">
+                                    <label for="futbol">Fútbol</label>
+                                </li>
+                                <li class="option">
+                                    <input id="basquet" type="radio" name="fav_hobby" value="Basquet">
+                                    <label for="basquet">Basquet</label>
+                                </li>
+                                <li class="option">
+                                    <input id="cantar" type="radio" name="fav_hobby" value="Cantar">
+                                    <label for="cantar">Cantar</label>
+                                </li>
+                                <li class="option">
+                                    <input id="bailar" type="radio" name="fav_hobby" value="Bailar">
+                                    <label for="bailar">Bailar</label>
+                                </li>
+                                <li class="option">
+                                    <input id="play" type="radio" name="fav_hobby" value="Jugar a la play">
+                                    <label for="play">Jugar a la play</label>
+                                </li>
+                                <li class="option">
+                                    <input id="otro1" type="radio" name="fav_hobby" value="Otro">
+                                    <label for="otro1">Otro</label>
+                                </li>
+                            </ul>
+                            <label class="title">¿Tocas alguno de estos intrumentros?</label>
+                            <ul class="options">
+                                <li class="option">
+                                    <input id="guitarra" type="checkbox">
+                                    <label for="guitarra">Guitarra</label>
+                                </li>
+                                <li class="option">
+                                    <input id="violin" type="checkbox">
+                                    <label for="violin">Violín</label>
+                                </li>
+                                <li class="option">
+                                    <input id="flauta" type="checkbox">
+                                    <label for="flauta">Flauta</label>
+                                </li>
+                                <li class="option">
+                                    <input id="piano" type="checkbox">
+                                    <label for="piano">Piano</label>
+                                </li>
+                                <li class="option">
+                                    <input id="bateria" type="checkbox">
+                                    <label for="bateria">Batería</label>
+                                </li>
+                                <li class="option">
+                                    <input id="otro2" type="checkbox">
+                                    <label for="otro2">Otro</label>
+                                </li>
+                            </ul>
+                            <label class="title">¿Cuántas horas al día le dedicas a tus hobbies?</label>
+                            <input id="horas" class="input" placeholder="0-24" type="number" min="0" max="24">
+                        </div>
+                    </div>
+                </form>
+                <form class="columna">
+                    <p><strong>Gustos Personales</strong></p>
+                    <div class="wrapper">
+                        <div class="pass-settings">
+                            <label for="bebida" class="title">Elige una bebida:</label>
+                            <select class="input" name="bebida" id="bebida">
+                                <option value="soda">Soda</option>
+                                <option value="jugo">Jugo</option>
+                                <option value="agua">Agua</option>
+                                <option value="café">Café</option>
+                                <option value="otra">Otra</option>
+                            </select><br><br>
+                            <label for="musical" class="title">Elige un género músical:</label>
+                            <select class="input" name="musical" id="musical">
+                                <option value="rock">Rock</option>
+                                <option value="pop">Pop</option>
+                                <option value="electronica">Electrónica</option>
+                                <option value="clasica">Clasica</option>
+                                <option value="otro">Otro</option>
+                            </select><br><br>
+                            <label for="color" class="title">Elige un color:</label>
+                            <select class="input" name="color" id="color">
+                                <option value="rojo">Rojo</option>
+                                <option value="azul">Azul</option>
+                                <option value="amarillo">Amarillo</option>
+                                <option value="verde">Negro</option>
+                                <option value="negro">Otro</option>
+                            </select><br><br>
+                            <label for="videojuego" class="title">Elige un videojuego:</label>
+                            <select class="input" name="videojuego" id="videojuego">
+                                <option value="lol">League of Legends</option>
+                                <option value="cod">Call of Duty</option>
+                                <option value="gi">Genshin Impact</option>
+                                <option value="fifa">FIFA</option>
+                                <option value="otra">Otro</option>
+                            </select><br><br>
+                            <label for="amigos" class="title">¿Cómo te llevas con tus amigos?</label>
+                            <select class="input" name="amigos" id="amigos">
+                                <option value="excelente">Excelente</option>
+                                <option value="bien">Bien</option>
+                                <option value="regular">Regular</option>
+                                <option value="mal">Mal</option>
+                                <option value="noTengo">No tengo</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <form class="columna">
+                    <p><strong>Sugerencias</strong></p>
+                    <div class="wrapper">
+                        <div class="pass-settings">
+                            <label class="title">Envíanos tus sugerencias...</label>
+                            <ul class="options">
+                                <textarea class="option" id="textarea" name="message" rows="10"
+                                    cols="30">Escribe aquí...</textarea>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+        <section id="galeria">
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (1).webp">
+                    <img src="./images/gallery/imagen (1).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (2).webp">
+                    <img src="./images/gallery/imagen (2).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (3).webp">
+                    <img src="./images/gallery/imagen (3).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (4).webp">
+                    <img src="./images/gallery/imagen (4).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (5).webp">
+                    <img src="./images/gallery/imagen (5).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (6).webp">
+                    <img src="./images/gallery/imagen (6).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (7).webp">
+                    <img src="./images/gallery/imagen (7).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (8).webp">
+                    <img src="./images/gallery/imagen (8).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (9).webp">
+                    <img src="./images/gallery/imagen (9).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (10).webp">
+                    <img src="./images/gallery/imagen (10).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (11).webp">
+                    <img src="./images/gallery/imagen (11).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (12).webp">
+                    <img src="./images/gallery/imagen (12).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (13).webp">
+                    <img src="./images/gallery/imagen (13).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (14).webp">
+                    <img src="./images/gallery/imagen (14).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (15).webp">
+                    <img src="./images/gallery/imagen (15).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (16).webp">
+                    <img src="./images/gallery/imagen (16).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (17).webp">
+                    <img src="./images/gallery/imagen (17).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (18).webp">
+                    <img src="./images/gallery/imagen (18).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (19).webp">
+                    <img src="./images/gallery/imagen (19).webp" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (20).avif">
+                    <img src="./images/gallery/imagen (20).avif" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="./images/gallery/imagen (21).avif">
+                    <img src="./images/gallery/imagen (21).avif" alt="ERROR" width="600" height="400">
+                </a>
+            </div>
+
+        </section>
+
+        <section id="contacto">CONTACTO</section>
+    </main>
+    <footer class="pie">PIE DE PAGINA</footer>
+</body>
+
+</html>
